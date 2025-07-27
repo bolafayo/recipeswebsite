@@ -12,17 +12,19 @@
 <body>
  <div class="app-container">
     <aside class="dashboard">
-      <h2>Dashboard</h2>
-      <div class="filter-group">
+      <h2>Recipeboard</h2>
+      <div class="filter-group" id="diet-group">
         <h3>Diet</h3>
         <button class="filter-btn" data-filter="Meat">Meat</button>
-        <button class="filter-btn" data-filter="Soup">Soup</button>
+        <button class="filter-btn" data-filter="Soup"><i class="fa-solid fa-drumstick"></i>Soup</button>
+          <button class="add-btn"data-group="diet-group">.<i class="fa-solid fa-plus"></i></button>
       </div>
-      <div class="filter-group">
+      <div class="filter-group" allergies-group>
         <h3>Allergies</h3>
         <button class="filter-btn" data-filter="Gluten">Gluten</button>
+          <button class="add-btn" data-group="allergies-group">.<i class="fa-solid fa-plus"></i></button>
       </div>
-      <div class="filter-group">
+      <div class="filter-group" cuisines-group>
         <h3>Cuisines</h3>
         <button class="filter-btn" data-filter="American">American</button>
         <button class="filter-btn" data-filter="Asian">Asian</button>
@@ -35,11 +37,13 @@
               <button class="filter-btn" data-filter="Brazilian">Brazilian</button>
                <button class="filter-btn" data-filter="Greek">Greek</button>
                 <button class="filter-btn" data-filter="Spanish">Spanish</button>
+                  <button class="add-btn"data-group="cuisines-group">.<i class="fa-solid fa-plus"></i></button>
       </div>
-      <div class="filter-group">
+      <div class="filter-group" goals-group>
         <h3>Goals</h3>
         <button class="filter-btn" data-filter="Weight loss">Weight loss</button>
         <button class="filter-btn" data-filter="Burn Fat">Burn Fat</button>
+         <button class="add-btn"data-group="goals-group">.<i class="fa-solid fa-plus"></i></button>
       </div>
     </aside>
 
