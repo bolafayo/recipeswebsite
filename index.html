@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe website</title>
+    <link rel="stylesheet" href="style.css">
+     <script src="https://cdn.jsdelivr.net/npm/vanillatoasts/vanillatoasts.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillatoasts/vanillatoasts.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <div class="app-container">
+    <aside class="dashboard">
+      <h2>Dashboard</h2>
+      <div class="filter-group">
+        <h3>Diet</h3>
+        <button class="filter-btn" data-filter="Meat">Meat</button>
+        <button class="filter-btn" data-filter="Soup">Soup</button>
+      </div>
+      <div class="filter-group">
+        <h3>Allergies</h3>
+        <button class="filter-btn" data-filter="Gluten">Gluten</button>
+      </div>
+      <div class="filter-group">
+        <h3>Cuisines</h3>
+        <button class="filter-btn" data-filter="American">American</button>
+        <button class="filter-btn" data-filter="Asian">Asian</button>
+          <button class="filter-btn" data-filter="Italian">Italian</button>
+            <button class="filter-btn" data-filter="Mediterranean">Mediterranean</button>
+            <button class="filter-btn" data-filter="Pakistani">Pakistani</button>
+            <button class="filter-btn" data-filter="Turkish">Turkish</button>
+            <button class="filter-btn" data-filter="Indian">Indian</button>
+             <button class="filter-btn" data-filter="Russian">Russian</button>
+              <button class="filter-btn" data-filter="Brazilian">Brazilian</button>
+               <button class="filter-btn" data-filter="Greek">Greek</button>
+                <button class="filter-btn" data-filter="Spanish">Spanish</button>
+      </div>
+      <div class="filter-group">
+        <h3>Goals</h3>
+        <button class="filter-btn" data-filter="Weight loss">Weight loss</button>
+        <button class="filter-btn" data-filter="Burn Fat">Burn Fat</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <input type="text" id="searchInput" placeholder="Search recipes..." />
+        <button id="searchBtn">Search</button>
+      </header>
+
+      <section id="recipeList" class="recipes-grid"></section>
+
+      <div class="pagination">
+        <button id="prevPage">Prev</button>
+        <span id="pageInfo">Page 1</span>
+        <button id="nextPage">Next</button>
+      </div>
+    </main>
+  </div>
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
