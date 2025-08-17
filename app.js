@@ -169,4 +169,45 @@
       }
     }
 
-    fetchRecipes();
+      fetchRecipes();
+    function saveCustomFilter(groupId ,  filters) {
+      const saved = JSON.parse(localStorage.getItem('custom-filters')) || {}
+      saved[groupId] = filters
+      localStorage.getItem('custom-filters', JSON.stringify(saved))
+
+    }
+    function loadCustomFilters() {
+      const saved = JSON.parse(localStorage.getItem('custom-filters')) || {}
+      Object.entries(saved).forEach(([groupId, filters]) =>{
+        const group = document.getElementById(groupId)
+        filters.forEach(filterValue =>{
+          const nextBtn = document.createElement('button')
+          newBtn.className = 'filter-btn'
+          newBtn.setAttribute('data-filter', filterValue)
+          newBtn.textContent = filterValue
+          newBtn.addEventListener('click',()=> filterRecipes(filterValue.toLowerCase()))
+          group.appendChild(newBtn)
+        })
+      }
+
+      )
+      
+    }
+    document.querySelectorAll('.add-btn').forEach(btn =>{
+      btn.addEventListener('click',() =>{
+        const groupId = btn.getAttribute('data-group')
+        const group = document.getElementById(groupId)
+        const filterValue = prompt('Enter new filter option:')
+        if(filterValue){
+          nextBtn.className = 'filter-btn'
+          newBtn.setAttribute('data-filter', filterValue)
+          newBtn.textContent = filterValue
+          newBtn.addEventListener('click',() => filterRecipes(filterValue.toLowerCase()))
+          group.appendChild(newBtn)
+
+          const current = Array.from(group.querySelectorAll('.filter-btn')).map(btn => btn.getAttribute('data-filter'))
+        }
+      })
+    })
+loadCustomFilters()
+  
