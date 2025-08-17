@@ -12,6 +12,7 @@ body{
     display: flex;
 }
 .dashboard{
+  /* display: none; */
     width: 250px;
     padding: 20px;
      background-color: #fff;
@@ -150,3 +151,11 @@ body{
     .single-recipe h2{
       margin: 15px;
     }
+        @media screen and (max-width:  468px){
+          .dashboard {
+          display: none;
+           
+            }
+          
+         
+        }
