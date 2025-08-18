@@ -3,13 +3,16 @@
 
 A recipe discovery web application where users can search, filter by diet, allergies, cuisines, and goals, mark favorites, and view detailed cooking instructions.
 
-👉 Recipe Website Demo
+👉 **Recipe Website Demo**
+
 https://recipeswebsite-psi.vercel.app/
 
+---
 ## Authors
 - [@Boladeolufayo](https://www.github.com/https://github.com/bolafayo)
-
-## Features
+  
+---
+## **Features**
 
 - React  
 - VanillaToasts  
@@ -18,37 +21,38 @@ https://recipeswebsite-psi.vercel.app/
 - LocalStorage API  
 - DummyJSON Recipes API  
 
-## Installation
+## **Installation**
 
-Fork the repository
+-Fork the repository
 
-Clone your forked repo
+-Clone your forked repo
+
 ```bash
 git clone https://github.com/your-username/recipe-website.git
 
   cd recipe-website
 ```
     
-## Contributing
+## **Contributing**
 
-Contributions are always welcome!
+-Contributions are always welcome!
 
-Please adhere to this project's `code of conduct`.
+-Please adhere to this project's `code of conduct`.
 
-Want to contribute? Here’s how:
+-Want to contribute? Here’s how:
 
-Fork the repository
+-Fork the repository
 
-Clone your forked repo
+-Clone your forked repo
 
-git clone https://github.com/your-username/recipe-website.git
+-git clone https://github.com/your-username/recipe-website.git
 
+---
+## **License**
 
-## License
+This project is licensed under the MIT License.
 
-[MIT](https://choosealicense.com/licenses/mit/)
-
-
+---
 ## Lessons Learned
 
 - Working with APIs
